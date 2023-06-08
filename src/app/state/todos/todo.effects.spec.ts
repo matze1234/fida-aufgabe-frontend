@@ -30,7 +30,6 @@ describe('TodoEffects', () => {
   it('should load todos and emit success action afterwards', () => {
     effects = TestBed.inject<TodosEffects>(TodosEffects);
 
-    expect(true).toBeTruthy();
     const dummyTodos = [{},{}] as Todo[];
     const todosService = TestBed.inject(TodosService) as jasmine.SpyObj<TodosService>;
     todosService.loadTodos.and.returnValue(of(dummyTodos));
