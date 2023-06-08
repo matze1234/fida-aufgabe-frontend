@@ -1,0 +1,42 @@
+.todos {
+  height: 100%;
+
+  .spinner {
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    z-index: 5;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .list {
+    /*display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;*/
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(calc(100% / 6), 1fr));
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(auto-fit, minmax(calc(100% / 3), 1fr));
+    }
+    @media (max-width: 700px) {
+      grid-template-columns: 1fr;
+    }
+
+    app-todo {
+      box-sizing: border-box;
+      padding: 5px 2px;
+      cursor: pointer;
+    }
+  }
+
+  .actions {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}

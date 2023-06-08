@@ -1,0 +1,23 @@
+<div class="add">
+  <h1>Todo erstellen</h1>
+  <form [formGroup]="todoForm" (ngSubmit)="submit()">
+    <div>
+
+      <div>
+        <mat-form-field>
+          <mat-label>Beschreibung</mat-label>
+          <input matInput formControlName="description">
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field>
+          <mat-label>Fälligkeitsdatum</mat-label>
+          <input matInput type="date" formControlName="dueDate">
+        </mat-form-field>
+      </div>
+
+    </div>
+    <button type="submit" [disabled]="!todoForm.valid" mat-raised-button color="primary">Speichern</button>
+  </form>
+</div>

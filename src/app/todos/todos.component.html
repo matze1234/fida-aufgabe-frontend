@@ -1,0 +1,13 @@
+<div class="todos">
+  <div *ngIf="loading$ | async" class="spinner">
+    <mat-spinner></mat-spinner>
+  </div>
+  <h1>Todos</h1>
+  <div class="list">
+    <app-todo *ngFor="let todo of (todos$ | async)" [todo]="todo" (click)="toggleState(todo)" (delete)="delete(todo.id)">
+    </app-todo>
+  </div>
+  <div class="actions">
+    <button mat-raised-button color="primary" (click)="add()">Erstellen</button>
+  </div>
+</div>

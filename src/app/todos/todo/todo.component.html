@@ -1,0 +1,7 @@
+<div class="todo" [class.done]="todo.done">
+  <div class="text">
+    <div class="description">{{todo.description}}</div>
+    <div class="due-date">{{todo.dueDate | date }}</div>
+  </div>
+  <div class="button-delete" (click)="delete.emit(); $event.stopPropagation()">x</div>
+</div>
