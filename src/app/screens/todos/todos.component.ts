@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import {Observable} from "rxjs";
-import {Todo} from "../models/todo";
+import {Todo} from "../../models/todo";
 import {Store} from "@ngrx/store";
-import {todosFeature} from "../state/todos/todo.reducer";
+import {todosFeature} from "../../state/todos/todo.reducer";
 import {Router} from "@angular/router";
-import {todoActions} from "../state/todos/todo.actions";
+import {todoActions} from "../../state/todos/todo.actions";
 
 @Component({
   selector: 'app-todos',

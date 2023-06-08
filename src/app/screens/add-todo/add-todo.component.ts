@@ -2,14 +2,14 @@ import { Component } from '@angular/core';
 import {Router} from "@angular/router";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {Store} from "@ngrx/store";
-import {todoActions} from "../state/todos/todo.actions";
+import {todoActions} from "../../state/todos/todo.actions";
 
 @Component({
   selector: 'app-add',
-  templateUrl: './add.component.html',
-  styleUrls: ['./add.component.scss']
+  templateUrl: './add-todo.component.html',
+  styleUrls: ['./add-todo.component.scss']
 })
-export class  AddComponent {
+export class AddTodoComponent {
   todoForm = new FormGroup({
     description: new FormControl('', Validators.required),
     dueDate: new FormControl('', Validators.required),

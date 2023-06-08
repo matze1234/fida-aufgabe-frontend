@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {TodosComponent} from "./todos/todos.component";
-import {AddComponent} from "./add/add.component";
+import {TodosComponent} from "./screens/todos/todos.component";
+import {AddTodoComponent} from "./screens/add-todo/add-todo.component";
 import {ErrorComponent} from "./error/error.component";
 
 const routes: Routes = [{
@@ -9,7 +9,7 @@ const routes: Routes = [{
   component: TodosComponent
 }, {
   path: 'add',
-  component: AddComponent
+  component: AddTodoComponent
 }, {
   path: 'error',
   component: ErrorComponent

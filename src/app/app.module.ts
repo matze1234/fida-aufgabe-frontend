@@ -7,8 +7,8 @@ import {Store, StoreModule} from '@ngrx/store';
 import {LocalStorageTodosService} from "./services/todo/local-storage.todos.service";
 import {TodosService} from "./services/todo/todos-service";
 import {todosFeature} from "./state/todos/todo.reducer";
-import { TodosComponent } from './todos/todos.component';
-import { AddComponent } from './add/add.component';
+import { TodosComponent } from './screens/todos/todos.component';
+import { AddTodoComponent } from './screens/add-todo/add-todo.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatInputModule} from "@angular/material/input";
@@ -18,7 +18,7 @@ import {EffectsModule} from "@ngrx/effects";
 import {todoActions} from "./state/todos/todo.actions";
 import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 import {MatChipsModule} from "@angular/material/chips";
-import { TodoComponent } from './todos/todo/todo.component';
+import { TodoComponent } from './screens/todos/todo/todo.component';
 import {MatButtonModule} from "@angular/material/button";
 import {ErrorHandlerService} from "./services/error-handler/error-handler.service";
 import { ErrorComponent } from './error/error.component';
@@ -27,7 +27,7 @@ import { ErrorComponent } from './error/error.component';
   declarations: [
     AppComponent,
     TodosComponent,
-    AddComponent,
+    AddTodoComponent,
     TodoComponent,
     ErrorComponent,
   ],

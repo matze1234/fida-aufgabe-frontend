@@ -3,8 +3,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { TodosComponent } from './todos.component';
 import {MockStore, provideMockStore} from "@ngrx/store/testing";
 import {Router} from "@angular/router";
-import {Todo} from "../models/todo";
-import {todoActions} from "../state/todos/todo.actions";
+import {Todo} from "../../models/todo";
+import {todoActions} from "../../state/todos/todo.actions";
 
 let store: MockStore;
 describe('TodosComponent', () => {

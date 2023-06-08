@@ -1,26 +1,26 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AddComponent } from './add.component';
+import { AddTodoComponent } from './add-todo.component';
 import {MockStore, provideMockStore} from "@ngrx/store/testing";
-import {todoActions} from "../state/todos/todo.actions";
+import {todoActions} from "../../state/todos/todo.actions";
 import {CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA} from "@angular/core";
 
 let store: MockStore;
 
-describe('AddComponent', () => {
-  let component: AddComponent;
-  let fixture: ComponentFixture<AddComponent>;
+describe('AddTodoComponent', () => {
+  let component: AddTodoComponent;
+  let fixture: ComponentFixture<AddTodoComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [AddComponent],
+      declarations: [AddTodoComponent],
       providers: [
         provideMockStore({})
       ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA]
     });
     store = TestBed.inject(MockStore);
-    fixture = TestBed.createComponent(AddComponent);
+    fixture = TestBed.createComponent(AddTodoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
