@@ -21,7 +21,7 @@ import {MatChipsModule} from "@angular/material/chips";
 import { TodoComponent } from './screens/todos/todo/todo.component';
 import {MatButtonModule} from "@angular/material/button";
 import {ErrorHandlerService} from "./services/error-handler/error-handler.service";
-import { ErrorComponent } from './error/error.component';
+import { ErrorComponent } from './screens/error/error.component';
 
 @NgModule({
   declarations: [
